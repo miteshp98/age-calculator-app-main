@@ -109,4 +109,10 @@ function calculateAge() {
   }
 }
 
+const day = userInput[0].value;
+
 submitBtn.addEventListener("click", calculateAge);
+
+userInput[0].addEventListener("input", function (e) {
+  checkValidDay();
+});
